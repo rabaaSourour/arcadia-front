@@ -11969,6 +11969,7 @@ textarea.form-control-lg {
 html {
   position: relative;
   min-height: 100%;
+  padding: 0 25px;
 }
 
 main {
@@ -11986,4 +11987,24 @@ footer.footer {
 p {
   font-family: "Mind Madurai", serif;
   font-size: 18px;
+}
+
+.ratio {
+  margin: 50px 0 100px;
+}
+
+.card_img_top {
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 15px auto 0;
+  box-shadow: 0 8px 20px -4px #A3B18A;
+  width: 100px;
+  height: 100px;
+}
+
+.card {
+  margin: 0 20px;
+  padding: 0 10px;
+  border-radius: 20px;
+  border: 0;
 }/*# sourceMappingURL=main.css.map */

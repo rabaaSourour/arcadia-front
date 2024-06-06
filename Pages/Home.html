@@ -1,1 +1,401 @@
-<h1> Bienvenue sur le site du ZOO Arcadia </h1>
+
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="scss/main.css">
+    
+
+          <div class="ratio ratio-16x9">
+              <video class="embed-responsive-item"  autoplay muted loop preload="auto">
+              <source src="/assets/présentation zoo.mp4" type="video/mp4">
+              </video>
+          </div>
+
+
+
+<section>
+          <div class="container mt-5">
+
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Habitats</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Animaux</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Services</button>
+                </li>
+              </ul>
+
+        <div class="tab-content" id="myTabContent">
+
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <p class="text-center">Chaque habitat du Zoo Écologique Arcadia est conçu pour refléter fidèlement les environnements naturels des espèces qu'il abrite, 
+              tout en sensibilisant le public aux enjeux environnementaux et aux actions nécessaires pour protéger notre planète.</p>
+            <div class="row mt-3">
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="/assets/Jungle.png" class="card-im-top height=100px" alt="Image 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Jungle</h5>
+                    <p class="card-text">Entrez dans la jungle luxuriante d'Arcadia, un sanctuaire verdoyant et mystérieux où la végétation dense crée un véritable paradis pour une multitude d'espèces exotiques. 
+                      Sous la canopée épaisse,  des singes espiègles se balancent de liane en liane, tandis que les colorés oiseaux tropicaux chantent des mélodies envoûtantes. 
+                      Les visiteurs peuvent explorer des sentiers sinueux qui traversent des fougères géantes et des arbres centenaires, 
+                      découvrant des habitants discrets comme les jaguars et les pythons. 
+                      Des cascades rafraîchissantes et des rivières cristallines ajoutent à l'atmosphère sereine de ce milieu. 
+                      Les expositions interactives et les ateliers pédagogiques permettent aux visiteurs d'en apprendre davantage sur la biodiversité unique des jungles tropicales et sur les menaces qui pèsent sur ces écosystèmes vitaux.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="/assets/Savane.png" class="card-im-top height=100px" alt="Image 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Savane</h5>
+                    <p class="card-text">Plongez au cœur de la vaste savane d'Arcadia, un espace ouvert et lumineux où les prairies infinies se déploient sous un ciel bleu éclatant. 
+                      Ici, les majestueux éléphants, les rapides guépards, et les imposants lions cohabitent avec des troupeaux de zèbres et d'antilopes gracieux. 
+                      Les acacias parsèment le paysage, offrant de l'ombre aux animaux durant les heures les plus chaudes de la journée. 
+                      Les visiteurs peuvent observer les interactions naturelles entre les espèces depuis des points d'observation surélevés, 
+                      tout en apprenant sur les efforts de conservation pour protéger ces habitats précieux. Des sentiers éducatifs vous guident à travers ce biotope, 
+                      avec des panneaux informatifs sur la biodiversité et les écosystèmes de la savane africaine.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="/assets/marais.png" class="card-im-top height= 100px" alt="Image 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Marais</h5>
+                    <p class="card-text">Découvrez l'écosystème fascinant des marais d'Arcadia, 
+                      où l'eau et la terre se rencontrent pour créer un habitat riche et diversifié. 
+                      Ce biotope humide abrite une variété d'espèces aquatiques et terrestres, 
+                      des grenouilles aux chants mélodieux aux tortues paisibles et aux oiseaux aquatiques élégants. 
+                      Les marais sont bordés de roseaux et de plantes aquatiques, offrant des refuges naturels pour de nombreuses créatures. 
+                      Des passerelles en bois permettent aux visiteurs de parcourir les marais sans perturber l'environnement fragile, offrant des vues imprenables sur la faune locale. 
+                      Des expositions éducatives mettent en lumière l'importance des zones humides pour l'écosystème global, 
+                      leur rôle dans la filtration de l'eau et la protection contre les inondations,
+                      ainsi que les efforts de conservation en cours pour préserver ces habitats essentiels.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <p>Ceci est l'onglet Profile. Vous pouvez ajouter vos informations de profil ici. Le contenu peut être aussi long que nécessaire.</p>
+            <div class="container my-4">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="/assets/lion.png" class="card-im-top" alt="image d'un lion">
+                    <div class="card-body">
+                      <h5 class="card-title">Panthera leo</h5>
+                      <p class="card-text">le roi de la savane le lion est un grand félin social qui vit en groupes appelés hardes</p>
+                      <a href="#" class="btn btn-primary">Qliquez ici</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="/assets/" class="card-im-top" alt="image d'un élégant">
+                    <div class="card-body">
+                      <h5 class="card-title">Loxodonta</h5>
+                      <p class="card-text">Le plus grand animal terrestre, les éléphants sont connus pour leur intelligence, leur mémoire exceptionnelle et leurs structures sociales complexes</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="/assets/guepard.png" class="card-im-top" alt="image d'un guepard">
+                    <div class="card-body">
+                      <h5 class="card-title">Acinonyx jubatus</h5>
+                      <p class="card-text">Le mammifère terrestre le plus rapide, capable d'atteindre des vitesses allant jusqu'à 100 km/h en courtes rafales</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image4.jpg" class="card-im-top" alt="Card Image 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Equus quagga</h5>
+                      <p class="card-text"> Connu pour ses rayures distinctives, chaque zèbre a un motif unique. Ils vivent en groupes et migrent sur de longues distances pour trouver de l'eau et des pâturages.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+
+            <div class="container my-4">
+              <div class="row">
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image1.jpg" class="card-im-top" alt="Card Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Panthera onca</h5>
+                      <p class="card-text">Le plus grand félin des Amériques, le jaguar est un prédateur solitaire puissant. Il est reconnaissable à son pelage tacheté.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image2.jpg" class="card-im-top" alt="Card Image 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Alouatta</h5>
+                      <p class="card-text"> Connu pour ses cris puissants qui peuvent être entendus à plusieurs kilomètres, ces singes vivent en groupes sociaux.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image3.jpg" class="card-im-top" alt="Card Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Ramphastos</h5>
+                      <p class="card-text">Reconnaissable à son grand bec coloré, le toucan est un oiseau sociable qui vit en petits groupes.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image4.jpg" class="card-im-top" alt="Card Image 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Bradypus</h5>
+                      <p class="card-text">Cet animal lent passe la plupart de son temps accroché aux branches des arbres, où il se nourrit et dort.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container my-4">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image1.jpg" class="card-im-top " alt="Card Image 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Alligator mississippiensis</h5>
+                      <p class="card-text"> Reptile imposant, l'alligator est un prédateur apex des marais d'Amérique du Nord.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="/assets/heron.png" class="card-im-top" alt="image d'un heron bleu">
+                    <div class="card-body">
+                      <h5 class="card-title">Ardea herodias</h5>
+                      <p class="card-text"> Grand oiseau échassier, le héron bleu est connu pour sa silhouette élancée et son vol majestueux.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image3.jpg" class="card-im-top" alt="Card Image 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Apalone spinifera</h5>
+                      <p class="card-text">Une tortue d'eau douce avec une carapace souple et un long cou, adaptée à la vie aquatique.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <img src="image4.jpg" class="card-im-top" alt="Card Image 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Lithobates catesbeianus</h5>
+                      <p class="card-text"> Une des plus grandes grenouilles d'Amérique du Nord, connue pour son croassement puissant.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <p>la découverte de la nature s'accompagne de confort et de commodités pour une expérience inoubliable, 
+              Notre parc propose plusieurs services pour enrichir votre visite et vous permettre de profiter pleinement de votre journée parmi les merveilles de la faune et de la flore.</p>
+              <h3>Services de Restauration</h3>
+              
+                <ul>
+                  <li>
+                    Cafétérias et Snacks : Offrant une variété de plats rapides, des sandwiches aux salades fraîches, 
+                    idéales pour une pause déjeuner ou un goûter.
+                  </li>
+                  <li>
+                    Restaurants Thématiques : Des espaces de restauration offrant des menus inspirés des différentes régions du monde, 
+                    où vous pourrez déguster des spécialités locales en accord avec les habitats que vous visitez.
+                  </li>
+                  <li>
+                    Options Végétariennes et Véganes : Pour répondre aux besoins alimentaires de tous nos visiteurs, 
+                    nous proposons des menus végétariens, véganes et sans gluten.
+                  </li>
+                </ul>
+              
+              <h3>Visites Guidées des Habitats</h3>
+              <p>Découvrez les merveilles de la savane, de la jungle et des marais avec nos visites guidées gratuites. 
+                Nos guides experts vous accompagneront à travers chaque habitat, vous offrant des explications détaillées sur les animaux et les écosystèmes que vous observez. Ces visites éducatives sont conçues pour enrichir votre expérience et sensibiliser à l'importance de la conservation.</p>
+              <ul>
+                <li>
+                  Horaires des Visites : Des visites sont organisées à intervalles réguliers tout au long de la journée. 
+                  Consultez le programme à l'entrée du parc ou sur notre application mobile pour ne rien manquer.
+              </li>
+              <li>Thèmes Spécifiques : Des visites thématiques sont proposées régulièrement, centrées sur des sujets tels que le comportement animal, 
+                les efforts de conservation ou les adaptations écologiques.
+              </li>
+              </ul>
+              <h3>Visite du Zoo en Petit Train</h3>
+              <p>Pour une exploration confortable et relaxante du parc,
+                  montez à bord de notre petit train touristique. 
+                  Ce service pratique vous permet de découvrir l'ensemble du zoo sans vous fatiguer,
+                  avec des arrêts aux principaux points d'intérêt.</p>
+            <ul>
+              <li>Tour Panoramique : Profitez d'un circuit complet du parc avec des commentaires en direct sur les habitats et les animaux que vous traversez.</li>
+              <li>Accessibilité : Le petit train est accessible aux personnes à mobilité réduite et aux familles avec poussettes.</li>
+              <li>Fréquence des Départs : Les trains partent toutes les 30 minutes depuis l'entrée principale, 
+                avec des arrêts aux zones de restauration et aux principales attractions du parc.</li>
+            </ul>
+              <p>Nous espérons que ces services rendront votre visite au Zoo Écologique Arcadia encore plus agréable et enrichissante. 
+                Merci de soutenir notre mission de conservation et d'éducation environnementale. Bonne visite !</p>
+          </div>
+        </div>
+      </div>
+    
+</section>
+
+<article>
+       <h3 class="text-center">Voici quelques avis sur notre ZOO</h3>
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="row">
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+            </div>
+          </div>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <img class="card_img_top" src="/assets/Jungle.png" alt="">
+              <h4> Rone Galle</h4>
+              <p class="card-text"> fhvblsievblqbf</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div class="card text-center">
+              <i class="bi bi-plus-lg" href=""></i>
+              <p class="card-text"> ajoutez votre avis</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+    </div>
+  </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</article>
