@@ -1,24 +1,44 @@
-<div class="container">
-    <form>
-        <select class="form-select" aria-label="Default select example">
-            <option selected>Connectez-vous en tant que</option>
-            <option value="1">Administrateur</option>
-            <option value="2">Vétérinaire</option>
-            <option value="3">Employé</option>
-        </select>
-        <div class="mb-3">
+    
+    
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="../scss/main.css">
+
+
+
+
+        <div class="container text-bg-secondary mt-5">
+            <form>
+                <div class="mb-3 pt-3">
+            <select class="form-select" aria-label="Default select example">
+                <option selected>Connectez-vous en tant que</option>
+                <option value="1">Administrateur</option>
+                <option value="2">Vétérinaire</option>
+                <option value="3">Employé</option>
+            </select>
+                </div>
+
+                <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
-        </div>
-        <div class="mb-3">
+                </div>
+
+                <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control" id="PasswordInput" name="Password">
+                </div>
+
+                <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-3">Connexion</button>
+                </div>
+            </form>
+
+                <div class="text-center pb-3">
+            <a href="/Pages/signup.html">Vous n’avez pas de compte ? Inscrivez-vous ici!</a>
+                </div>
         </div>
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Connexion</button>
-        </div>
-    </form>
-    <div class="text-center pt-3">
-        <a href="/Pages/signup.html">Vous n’avez pas de compte ? Inscrivez-vous ici!</a>
-    </div>
-</div>
+
+
+
+    <script type="module" src="../Router/Router.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -11994,7 +11994,7 @@ p {
 }
 
 .card_img_top {
-  max-width: 100px;
+  max-width: 200px;
   border-radius: 50%;
   margin: 15px auto 0;
   box-shadow: 0 8px 20px -4px #A3B18A;

@@ -1,42 +1,59 @@
-<div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
-        <h1>Inscription</h1>
-    </div>
-</div>
-<div class="container">
-    <form>
-        <div class="mb-3">
+
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="../scss/main.css">
+
+
+
+
+
+        <h1 class="text-center text-dark p-4">Inscrivez-vous!</h1>
+
+            <div class="container text-bg-secondary p-4">
+        <form>
+                <div class="mb-3">
             <label for="NomInput" class="form-label">Nom</label>
             <input type="text" class="form-control" id="NomInput" placeholder="Votre nom" name="Nom"> 
-        </div>
-        <div class="mb-3">
+                </div>
+
+                <div class="mb-3">
             <label for="PrenomInput" class="form-label">Prénom</label>
             <input type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" name="Prenom"> 
-        </div>
-        <div class="mb-3">
+                </div>
+
+                <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
-        </div>
-        <div class="mb-3">
+                </div>
+
+                <div class="mb-3">
             <label for="PasswordInput" class="form-label">Mot de passe</label>
             <input type="password" class="form-control" id="PasswordInput" name="Password">
-            <div class="col-auto">
+                <div class="col-auto">
             <span id="passwordHelpInline" class="form-text">
                 Votre mot de passe doit comporter au moins 12 caractères<br>
                 Utilisez une combinaison de lettres majuscules et minuscules,
                 de chiffres et de caractères spéciaux (par exemple, !, @, #, $).
             </span>
-        </div>
-        </div>
-        <div class="mb-3">
+                </div>
+                </div>
+
+                <div class="mb-3">
             <label for="ValidatePasswordInput" class="form-label">Validez votre mot de passe</label>
             <input type="password" class="form-control" id="ValidatePasswordInput" name="PasswordConfirm">
-        </div>
-        <div class="text-center">
-            <button type="submit" class="btn btn-primary">Inscription</button>
-        </div>
-    </form>
-    <div class="text-center pt-3">
-        <a href="/Pages/signin.html">Vous avez déjà un compte ? Connectez-vous ici!</a>
-    </div>
-</div>
+                </div>
+
+                <div class="text-center">
+            <button type="submit" class="btn btn-primary mt-3">Inscription</button>
+                </div>
+        </form>
+
+                <div class="text-center pt-3">
+            <a href="/Pages/signin.html">Vous avez déjà un compte ? Connectez-vous ici!</a>
+                </div>
+            </div>
+            
+
+    <script type="module" src="../Router/Router.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
