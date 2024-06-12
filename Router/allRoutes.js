@@ -4,9 +4,9 @@ import Route from "./Route.js";
 export const allRoutes = [
     new Route("/Home", "Accueil", "/Pages/Home.html"),
     new Route("/Service", "Service", "/Pages/Service.html"),
-    new Route("/signin", "signin", "/Pages/signin.html"),
-    new Route("/monCompte", "monCompte", "/Pages/monCompte.html"),
-    new Route("/reviews", "reviews", "/Pages/reviews.html"),
+    new Route("/signin", "Connexion", "/Pages/signin.html", "/js/signin.js"),
+    new Route("/monCompte", "Changement de mot de passe", "/Pages/monCompte.html", "/js/monCompte.js"),
+    new Route("/reviews", "avis", "/Pages/reviews.html"),
     new Route("/contacts", "contacts", "/Pages/contacts.html"),
     new Route("/habitats", "habitats", "/Pages/habitats.html"),
     new Route("/jungle", "jungle", "/Pages/jungle.html"),

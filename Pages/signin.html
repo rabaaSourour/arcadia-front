@@ -7,36 +7,48 @@
 
 
 
-        <div class="container text-bg-secondary rounded mt-5">
+    <div class="container text-bg-secondary rounded mt-5">
             <form>
-                <div class="mb-3 pt-3">
+            <div class="mb-3 pt-3">
             <select class="form-select" aria-label="Default select example">
                 <option selected>Connectez-vous en tant que</option>
                 <option value="1">Administrateur</option>
                 <option value="2">Vétérinaire</option>
                 <option value="3">Employé</option>
             </select>
-                </div>
+            <div class="invalid-feedback" id="roleFeedback">
+                Veuillez sélectionner un rôle.
+            </div>
+        </div>
 
-                <div class="mb-3">
+        <div class="mb-3">
             <label for="EmailInput" class="form-label">Email</label>
             <input type="email" class="form-control" id="EmailInput" placeholder="test@mail.fr" name="Email"> 
-                </div>
-
-                <div class="mb-3">
-            <label for="PasswordInput" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="PasswordInput" name="Password">
-                </div>
-
-                <div class="text-center">
-            <button type="submit" class="btn btn-primary mt-3">Connexion</button>
-                </div>
-            </form>
-
-                <div class="text-center pb-3">
-            <a href="/Pages/monCompte.html">Mot de passe oublié ? Changer le mot de passe par ici !</a>
+                <div class="invalid-feedback" id="emailFeedback">
+                    Veuillez entrer une adresse email valide.
                 </div>
         </div>
+
+        <div class="mb-3">
+            <label for="PasswordInput" class="form-label">Mot de passe</label>
+            <input type="password" class="form-control" id="PasswordInput">
+            <div class="invalid-feedback" id="passwordFeedback">
+                Veuillez entrer votre mot de passe.
+            </div>
+                
+        
+        </div>
+
+        <div class="text-center">
+            <button type="button" class="btn btn-primary mt-3 mb-3" id="btn-validation-connexion">Connexion</button>
+        </div>
+            <div id="error-message" style="display: none; color: red;"></div>
+            </form>
+
+            <div class="text-center pb-3">
+            <a href="/Pages/monCompte.html">Mot de passe oublié ? Changer le mot de passe par ici !</a>
+            </div>
+    </div>
 
 
 
