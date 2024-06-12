@@ -7,19 +7,14 @@ html{
     padding: 0 25px;
 }
 
-
-main{
-    margin-bottom: 250px;
-}
-
 footer.footer {
     padding: 15px;
     position: absolute;
     width: 100%;
     bottom: 0;
     font-size: 16px;
-
 }
+
 p{
     font-family: $font-family-serif ;
     font-size: 18px;
@@ -27,6 +22,7 @@ p{
 .ratio{
     margin: 50px 0 100px;
 }
+/*
 .card_img_top{
     max-width: 200px;
     border-radius: 50%;
@@ -34,9 +30,9 @@ p{
     box-shadow: 0 8px 20px -4px $secondary;
     width: 100px;
     height: 100px;
-
 }
-.card{
+*/
+/*.card{
     margin: 0 20px;
     padding: 0 10px;
     border-radius: 20px;
@@ -47,3 +43,9 @@ p{
     max-width: 50px;
     max-height: 50px;
 }
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+*/
