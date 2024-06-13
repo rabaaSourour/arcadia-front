@@ -1,32 +1,69 @@
 
     
-    
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
     <link rel="stylesheet" href="../scss/main.css">
 
+
+    <div id="loader" class="loader">
+    </div>
+    <div id="content">
 <div class="contenaire text-bg-secondary rounded">
     <!-- les anumaux de la jungle-->
 
 <div class="contenaire rounded p-4 m-3">
-  <a  href="/Pages/jungle.html"><h1 class="text-center text-bg-primary">Dévouvrez les animaux de la jungle !</h1></a>
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <a  href="/Pages/jungle.html">
+    <h1 class="text-center text-bg-primary">Dévouvrez les animaux de la jungle !</h1>
+  </a>
+<div id="jungleCarousel" class="carousel slide" data-bs-ride="true">
     <div class="carousel-inner">
       <!-- animal: jaguar-->
         <div class="carousel-item active">
           <img src="/assets/jaguar.png" class="d-block w-100 h-80" alt="image d'un jaguar">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
         </div>
       <!--animal : singe-->
         <div class="carousel-item">
           <img src="/assets/singe.png" class="d-block w-100 h-80" alt="image d'un singe">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
         </div>
       <!-- animal: toucan-->
       <div class="carousel-item">
         <img src="/assets/toucan.png" class="d-block w-100 h-80" alt="image d'un toucan">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal:paresseux-->
       <div class="carousel-item">
         <img src="/assets/paresseux.png" class="d-block w-100 h-80" alt="image d'un paresseux">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
 
     </div>
@@ -40,30 +77,65 @@
       <span class="visually-hidden">Next</span>
     </button>
 
+</div>
 </div>
 </div>
 
     <!-- les animaux de la savane-->
+    <div class="contenaire text-bg-secondary rounded">
 
 <div class="contenaire rounded p-4 m-3">
- <a href="/Pages/savane.html"> <h1 class="text-center text-bg-primary">Dévouvrez les animaux de la Savane !</h1></a>
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <a href="/Pages/savane.html">
+    <h1 class="text-center text-bg-primary">Dévouvrez les animaux de la Savane !</h1>
+  </a>
+<div id="savaneCarousel" class="carousel slide" data-bs-ride="true">
     <div class="carousel-inner">
       <!-- animal: lion-->
       <div class="carousel-item active">
         <img src="/assets/lion.png" class="d-block w-100" alt="imaged'un lion">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal: éléphant-->
       <div class="carousel-item">
         <img src="/assets/elephant.png" class="d-block w-100" alt="image d'un éléphant">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!--animal: guepard-->
       <div class="carousel-item">
         <img src="/assets/guepard.png" class="d-block w-100" alt="image du guepard">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i></button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal: zébre-->
       <div class="carousel-item">
         <img src="/assets/zebre.png" class="d-block w-100" alt="image d'un zébre">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
 
     </div>
@@ -79,28 +151,62 @@
 
 </div>
 </div>
+    </div>
 
     <!--les animaux du marais-->
+    <div class="contenaire text-bg-secondary rounded">
 
 <div class="contenaire rounded p-4 m-3">
   <a href="/Pages/marais.html"><h1 class="text-center text-bg-primary">Dévouvrez les animaux du Marais !</h1></a>
-<div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+<div id="maraisCarousel" class="carousel slide" data-bs-ride="true">
     <div class="carousel-inner">
       <!-- animal: aligator-->
       <div class="carousel-item active">
         <img src="/assets/aligator.png" class="d-block w-100" alt="image d'aligator">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal: hreon bleu-->
       <div class="carousel-item">
         <img src="/assets/heron.png" class="d-block w-100" alt="image d'un heron bleu">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal: tortue-->
       <div class="carousel-item">
         <img src="/assets/tortue.png" class="d-block w-100" alt="image d'une tortue">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
       <!-- animal: grenouille-->
       <div class="carousel-item">
         <img src="/assets/grenouille.png" class="d-block w-100" alt="image d'une grenouille">
+        <div class="action-image-buttons" data-show="admin">
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+            <i class="bi bi-trash"></i>
+          </button>
+      </div>
       </div>
 
     </div>
@@ -116,8 +222,62 @@
 
 </div>
 </div>
+</div>
+<div class="contenaire text-bg-secondary rounded mb-3 p-4">
+    <div class="text-center">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="admin">Ajouter un habitat</button>
 
+</div>
+</div>
+</div>
 
+<!-- Modal Edition-->
+      <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="NamePhotoInput" class="form-label">Titre</label>
+                      <input type="text" class="form-control" id="NamePhotoInput" name="Titre"> 
+                    </div>
+                    <div class="mb-3">
+                      <label for="ImageInput" class="form-label">Image</label>
+                      <input type="file" class="form-control" id="ImageInput"  name="Image">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">Enregistrer</button>
+                    </div>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    
+  
+
+<!-- Modal suppression-->
+<div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="DeletePhotoModal">Etes-vous sur de vouloir supprimer cette photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="text-center">
+                  <button type="button" class="btn btn-danger">Supprimer</button>
+                  <button type="button" class="btn btn-secondry" data-bs-dismiss="modal">Annuler</button>
+              </div>
+          </form>
+        </div>
+    </div>
+  </div>
 </div>
 
 
