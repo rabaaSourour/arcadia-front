@@ -9,7 +9,7 @@ function getRole() {
 }
 
 function signout() {
-    eraseCookie(tokenCookieName);
+    eraseCookie(tokenCookieName); 
     eraseCookie(RoleCookieName);
     window.location.reload();
 }

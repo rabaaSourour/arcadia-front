@@ -8,228 +8,947 @@
     <div id="loader" class="loader">
     </div>
     <div id="content">
-<div class="contenaire text-bg-secondary rounded">
+<!-- conteneur des habitats-->
+
+<div class="container text-bg-secondary rounded">
+
     <!-- les anumaux de la jungle-->
 
-<div class="contenaire rounded p-4 m-3">
-  <a  href="/Pages/jungle.html">
-    <h1 class="text-center text-bg-primary">Dévouvrez les animaux de la jungle !</h1>
-  </a>
-<div id="jungleCarousel" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-      <!-- animal: jaguar-->
-        <div class="carousel-item active">
-          <img src="/assets/jaguar.png" class="d-block w-100 h-80" alt="image d'un jaguar">
-          <div class="action-image-buttons" data-show="admin">
-            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-              <i class="bi bi-pencil-square"></i>
-            </button>
-            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-              <i class="bi bi-trash"></i>
-            </button>
-        </div>
-        </div>
-      <!--animal : singe-->
-        <div class="carousel-item">
-          <img src="/assets/singe.png" class="d-block w-100 h-80" alt="image d'un singe">
-          <div class="action-image-buttons" data-show="admin">
-            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-              <i class="bi bi-pencil-square"></i>
-            </button>
-            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-              <i class="bi bi-trash"></i>
-            </button>
-        </div>
-        </div>
-      <!-- animal: toucan-->
-      <div class="carousel-item">
-        <img src="/assets/toucan.png" class="d-block w-100 h-80" alt="image d'un toucan">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
+<div class="container rounded p-4 m-3">
+    <h1 class="text-center">Dévouvrez les animaux de la jungle !</h1>
+    <div class="card mb-3 text-bg-primary rounded">
+    <div>
+      <img src="/assets/Jungle.png" class="card-img p-3 " alt="image de la Jungle">
+      <div class="action-image-buttons" data-show="admin">
+        <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+          <i class="bi bi-trash"></i>
+        </button>
       </div>
+    </div>
+      <div class="card-body">
+        <h5 class="card-title text-dark">Jungle</h5>
+        <p class="card-text text-clear">La jungle, une forêt tropicale dense et luxuriante,<br> abrite une biodiversité exceptionnelle et joue un rôle vital dans la régulation climatique et la préservation de la biodiversité.<br> 
+          Cependant, elle est confrontée à des menaces telles que la déforestation et le changement climatique.<br> 
+          La conservation de cet habitat crucial est essentielle pour maintenir l'équilibre écologique de la planète.
+        </p>
       </div>
-      <!-- animal:paresseux-->
-      <div class="carousel-item">
-        <img src="/assets/paresseux.png" class="d-block w-100 h-80" alt="image d'un paresseux">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
+    </div>
+</div>
+      
+
+<div id="habitats-container" class="container">
+  <div class=" container text-bg-secondary rounded p-4">
+    <!-- card jaguar -->
+    <div class="card text-bg-primary mb-3 animal-card">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+            <img src="/assets/jaguar.png" class="img-fluid rounded-start" alt="image d'un jaguar">
+            <div class="action-image-buttons" data-show="admin">
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                <i class="bi bi-pencil-square"></i>
+              </button>
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                <i class="bi bi-trash"></i>
+              </button>
+            </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Acinonyx jubatus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong> guépard (Acinonyx jubatus) est une espèce unique dans sa propre lignée et ne se divise pas en races comme les chiens ou les chats domestiques.
+                </li>
+                <li><strong>Habitat :</strong>Le guépard est affecté principalement aux savanes et aux prairies de l'Afrique subsaharienne. 
+                Ils préfèrent les espaces ouverts où ils peuvent utiliser leur vitesse pour chasser leurs proies.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
       </div>
 
+      <div id="animal-details" class="hidden">
+        <!-- contenu des détails de l'animal-->
+        
+        <div id="animal-details" class="container hidden">
+          <div class="row justify-content-center">
+              <div class="col-md-6">
+                  <div class="card text-center text-bg-secondary mb-3">
+                      <div class="card-body">
+                          <h5 class="card-title" id="animal-name"> Jaguar </h5>
+                        <div>
+                          <img src="/assets/jaguar.png" class="card-img" alt="Image d'un jaguar" id="animal-image">
+                          <div class="action-image-buttons" data-show="admin">
+                            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                              <i class="bi bi-pencil-square"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                              <i class="bi bi-trash"></i>
+                            </button>
+                          </div>
+                        </div>
+                          <p class="card-text" id="animal-description"><ul>
+                          <li>Poids : 90kg</li>
+                          <li>Pelage : Dense et brillant</li>
+                          <li>Dents: Bon état, pas de tarte significatif</li>
+                          <li>comportement : calme et réactif</li>
+                        </ul>
+                        </p>
+                          <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger surpoids observé</span></p>
+                          <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food"> viande de boeuf, poisson, supplément en taurine.</span></p>
+                          <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">4kg par jour.</span></p>
+                          <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                          <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">léger surplus de poids, recommandé d'augmenter l'activité physique et ajuster la ration alimentaire.<br> 
+                            Pas de blessures ousignes de maladie<br> Examen sanguin : Paramétres normaux, fonction rénale et hépatique en bon état.</span></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        
+    </div>
+      
+    <!-- card singe -->
+    
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/singe.png" class="img-fluid rounded-start" alt="image d'un singe">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Alouatta</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les singes hurleurs appartiennent au genre Alouatta,  Famille des Atelidae, sous-famille des Alouattinae.
+                </li>
+                <li><strong>Habitat :</strong>Le singe hurleur roux est largement distribué en Amérique du Sud.<br>
+                  Ils habitent divers types de forêts tropicales, Forêts tropicales humides, Forêts de plaine ,Forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> singe </h5>
+                                <div>
+                                  <img src="/assets/singe.png" class="card-img" alt="Image d'un jaguar" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 5kg</li>
+                                  <li>Pelage : Brillant et propre</li>
+                                  <li>Dents: Bon état, pas de caries</li>
+                                  <li>comportement : social avec ses congénéres,interactif avec les soigneurs</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, comportement alerte et actif</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food"> fruits variés (bananes, pommes, oranges), légumes(carottes, poivrons), supplément en calcium</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">500g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">Aucune blessure apparente,membres en bonne condition<br>
+                                  Bien hydraté, pas de signe de stress ou d'anxiété apparents</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
     </div>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    
+    <!--card toucan-->
 
-</div>
-</div>
-</div>
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/toucan.png" class="img-fluid rounded-start" alt="image d'un toucan">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Ramphastos</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>C'est la plus grande espèce de toucan et se distingue par son énorme bec orange. On le trouve dans les forêts ouvertes et les savanes du centre et de l'est de l'Amérique du Sud.
+                </li>
+                <li><strong>Habitat :</strong>Les toucans habitent principalement les forêts tropicales et subtropicales humides. 
+                  Ces forêts denses offrent une abondance de fruits, qui constituent l'essentiel de leur régime alimentaire.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> toucan </h5>
+                                <div>
+                                  <img src="/assets/toucan.png" class="card-img" alt="Image d'un toucan" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 600g</li>
+                                  <li>Plumage :  Brillant et coloré, aucune plume manquante</li>
+                                  <li>Bec : Solide et en bon état, pas de fissures</li>
+                                  <li>Comportement : Actif et vocal, montre des comportements exploratoires normaux</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state"> En bonne santé générale, plumage vif et intact.</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Fruits variés (papaye, mangue, banane), insectes (grillons, vers de farine), granulés spécialisés pour oiseaux.</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">200g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">Excellente condition physique générale, recommandé de maintenir la diversité alimentaire pour assurer l'apport nutritionnel complet. 
+                                  <br> Pas de signes de stress ou d'anomalies comportementales.<br>
+                                    Bonne musculature, pas de signes de blessures ou d'infections</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+  
+    <!-- card paresseux-->
+      
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
 
     <!-- les animaux de la savane-->
-    <div class="contenaire text-bg-secondary rounded">
+  <div class="container text-bg-secondary rounded">
 
-<div class="contenaire rounded p-4 m-3">
-  <a href="/Pages/savane.html">
-    <h1 class="text-center text-bg-primary">Dévouvrez les animaux de la Savane !</h1>
-  </a>
-<div id="savaneCarousel" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-      <!-- animal: lion-->
-      <div class="carousel-item active">
-        <img src="/assets/lion.png" class="d-block w-100" alt="imaged'un lion">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
+<div class="container rounded p-4 m-3">
+  
+    <h1 class="text-center ">Dévouvrez les animaux de la Savane !</h1>
+    <div class="card mb-3 text-bg-primary rounded">
+    <div>
+      <img src="/assets/Savane.png" class="card-img p-3" alt="image de la Savane">
+      <div class="action-image-buttons" data-show="admin">
+        <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+          <i class="bi bi-trash"></i>
+        </button>
       </div>
-      </div>
-      <!-- animal: éléphant-->
-      <div class="carousel-item">
-        <img src="/assets/elephant.png" class="d-block w-100" alt="image d'un éléphant">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-      <!--animal: guepard-->
-      <div class="carousel-item">
-        <img src="/assets/guepard.png" class="d-block w-100" alt="image du guepard">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i></button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-      <!-- animal: zébre-->
-      <div class="carousel-item">
-        <img src="/assets/zebre.png" class="d-block w-100" alt="image d'un zébre">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-
     </div>
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
-</div>
-</div>
+      <div class="card-body">
+        <h5 class="card-title text-dark">Savane</h5>
+        <p class="card-text text-clear">Tla savane est un lieu qui recrée l'écosystème de la savane de manière durable pour abriter et exposer une diversité d'animaux. <br>
+          Il met l'accent sur la conservation,
+          l'éducation et la recherche, <br>tout en favorisant une observation respectueuse des animaux.</p>
+        <p class="card-text"></p>
+      </div>
     </div>
+    <div class=" contenaire text-bg-secondary rounded p-4">
+      <!-- card lion  -->
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/lion.png" class="img-fluid rounded-start" alt="image d'un lion">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Panthera leo</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les lions (Panthera leo) sont parmi les grands félins les plus emblématiques et reconnaissables au monde.<br>Cependant, il existe plusieurs sous-espèces de lions qui se distinguent par des différences géographiques, physiques et génétiques.
+                </li>
+                <li><strong>Habitat :</strong>Les lions vivent principalement dans les savanes et les prairies d'Afrique subsaharienne. 
+                  Ces habitats ouverts leur offrent de vastes territoires de chasse et une abondance de proies.<br>On peut également trouver des lions dans les forêts ouvertes et les régions de bushveld, où la couverture végétale est moins dense.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Lion </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Lion" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 190kg</li>
+                                  <li>Pelage : Épais et en bon état, sans zones de perte de poils</li>
+                                  <li>Dents : Usées mais en bon état pour son âge, pas de caries</li>
+                                  <li>Comportement : Actif et vigilant, comportement territorial normal</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger vieillissement observé.</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food"> Viande de bœuf, poulet, lapin, supplément en taurine.</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">7 kg par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Léger vieillissement observé dans la démarche, recommandé de surveiller les articulations et la mobilité. Pas de signes de maladie ou de stress. Maintenir une alimentation riche en protéines pour soutenir la masse musculaire.
+                                  <br> Musculature bien développée, pas de blessures apparentes</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+  
+      <!-- card éléphant-->
+      
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+      <!-- card guepard-->
+  
+      <div class="card text-bg-primary mb-3">
+        <div class="row g-0 p-5">
+          <div class="col-md-4">
+            <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+            <div class="action-image-buttons" data-show="admin">
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                <i class="bi bi-pencil-square"></i>
+              </button>
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                <i class="bi bi-trash"></i>
+              </button>
+          </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Bradypus</h5>
+              <p class="card-text text-clear">
+                <ul>
+                  <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                  </li>
+                  <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                    Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                  </li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+                <div id="animal-details" class="hidden">
+                  <!-- contenu des détails de l'animal-->
+                  
+                  <div id="animal-details" class="container hidden">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card text-center text-bg-secondary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                  <div>
+                                    <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                    <div class="action-image-buttons" data-show="admin">
+                                      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                        <i class="bi bi-pencil-square"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                        <i class="bi bi-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                    <p class="card-text" id="animal-description"><ul>
+                                    <li>Poids : 4g</li>
+                                    <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                    <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                    <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                    </ul>
+                                    </p>
+                                    <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                    <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                    <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                    <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                    <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                    <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+      
+      <!-- card zébre-->
+      
+      <div class="card text-bg-primary mb-3">
+        <div class="row g-0 p-5">
+          <div class="col-md-4">
+            <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+            <div class="action-image-buttons" data-show="admin">
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                <i class="bi bi-pencil-square"></i>
+              </button>
+              <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                <i class="bi bi-trash"></i>
+              </button>
+          </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-dark">Bradypus</h5>
+              <p class="card-text text-clear">
+                <ul>
+                  <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                  </li>
+                  <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                    Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                  </li>
+                </ul> 
+              </p>
+            </div>
+          </div>
+                <div id="animal-details" class="hidden">
+                  <!-- contenu des détails de l'animal-->
+                  
+                  <div id="animal-details" class="container hidden">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card text-center text-bg-secondary mb-3">
+                                <div class="card-body">
+                                    <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                  <div>
+                                    <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                    <div class="action-image-buttons" data-show="admin">
+                                      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                        <i class="bi bi-pencil-square"></i>
+                                      </button>
+                                      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                        <i class="bi bi-trash"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                    <p class="card-text" id="animal-description"><ul>
+                                    <li>Poids : 4g</li>
+                                    <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                    <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                    <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                    </ul>
+                                    </p>
+                                    <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                    <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                    <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                    <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                    <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                    <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+    
+  </div>
+</div>
+  
 
     <!--les animaux du marais-->
-    <div class="contenaire text-bg-secondary rounded">
+    <div class="container text-bg-secondary rounded">
 
-<div class="contenaire rounded p-4 m-3">
-  <a href="/Pages/marais.html"><h1 class="text-center text-bg-primary">Dévouvrez les animaux du Marais !</h1></a>
-<div id="maraisCarousel" class="carousel slide" data-bs-ride="true">
-    <div class="carousel-inner">
-      <!-- animal: aligator-->
-      <div class="carousel-item active">
-        <img src="/assets/aligator.png" class="d-block w-100" alt="image d'aligator">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-      <!-- animal: hreon bleu-->
-      <div class="carousel-item">
-        <img src="/assets/heron.png" class="d-block w-100" alt="image d'un heron bleu">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-      <!-- animal: tortue-->
-      <div class="carousel-item">
-        <img src="/assets/tortue.png" class="d-block w-100" alt="image d'une tortue">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-      <!-- animal: grenouille-->
-      <div class="carousel-item">
-        <img src="/assets/grenouille.png" class="d-block w-100" alt="image d'une grenouille">
-        <div class="action-image-buttons" data-show="admin">
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
-            <i class="bi bi-pencil-square"></i>
-          </button>
-          <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
-            <i class="bi bi-trash"></i>
-          </button>
-      </div>
-      </div>
-
+<div class="container rounded p-4 m-3">
+  <h1 class="text-center">Dévouvrez les animaux du Marais !</h1>
+  <div class="card mb-3 text-bg-primary rounded">
+  <div>
+    <img src="/assets/marais.png" class="card-img p-3" alt="image du Marais">
+    <div class="action-image-buttons" data-show="admin">
+      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+        <i class="bi bi-pencil-square"></i>
+      </button>
+      <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+        <i class="bi bi-trash"></i>
+      </button>
     </div>
+  </div>
+    <div class="card-body">
+      <h5 class="card-title text-dark">Card title</h5>
+      <p class="card-text text-clear">Le Marais est un habitat écologique typique des zones humides, caractérisé par une grande diversité biologique.<br>
+        Il comprend des marécages, des étangs, des tourbières et des zones de végétation dense.<br>
+        Ces écosystèmes fournissent un habitat vital pour de nombreuses espèces de plantes et d'animaux.<br>
+        Le Marais agit également comme un important réservoir de biodiversité et contribue à la régulation du cycle de l'eau et à la filtration des polluants.<br> 
+        Sa préservation est essentielle pour maintenir l'équilibre écologique et protéger la vie sauvage..</p>
+      <p class="card-text"></p>
+    </div>
+  </div>
+  <div class=" contenaire text-bg-secondary rounded p-4">
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <!-- card aligator  -->
 
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+    
+    <!-- card tortue -->
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+    <!-- card heron bleu-->
+
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+    
+    <!-- card grenouille-->
+
+    <div class="card text-bg-primary mb-3">
+      <div class="row g-0 p-5">
+        <div class="col-md-4">
+          <img src="/assets/paresseux.png" class="img-fluid rounded-start" alt="image d'un parésseux">
+          <div class="action-image-buttons" data-show="admin">
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+              <i class="bi bi-trash"></i>
+            </button>
+        </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Bradypus</h5>
+            <p class="card-text text-clear">
+              <ul>
+                <li><strong>Race :</strong>Les paresseux sont des mammifères fascinants connus pour leur comportement lent et leur mode de vie arboricole.
+                </li>
+                <li><strong>Habitat :</strong>Les paresseux sont principalement trouvés dans les forêts tropicales d'Amérique centrale et d'Amérique du Sud. Leur habitat naturel comprend les canopées des arbres où ils passent la majeure partie de leur vie.<br>
+                  Ils habitent également les forêts de plaine ainsi que les forêts de montagne.
+                </li>
+              </ul> 
+            </p>
+          </div>
+        </div>
+              <div id="animal-details" class="hidden">
+                <!-- contenu des détails de l'animal-->
+                
+                <div id="animal-details" class="container hidden">
+                  <div class="row justify-content-center">
+                      <div class="col-md-6">
+                          <div class="card text-center text-bg-secondary mb-3">
+                              <div class="card-body">
+                                  <h5 class="card-title" id="animal-name"> Paresseux </h5>
+                                <div>
+                                  <img src="/assets/paresseux.png" class="card-img" alt="Image d'un Paresseux" id="animal-image">
+                                  <div class="action-image-buttons" data-show="admin">
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
+                                      <i class="bi bi-pencil-square"></i>
+                                    </button>
+                                    <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#DeletePhotoModal">
+                                      <i class="bi bi-trash"></i>
+                                    </button>
+                                  </div>
+                                </div>
+                                  <p class="card-text" id="animal-description"><ul>
+                                  <li>Poids : 4g</li>
+                                  <li>Pelage : Duveteux, en bon état, sans parasites visibles</li>
+                                  <li>Dents : En bon état, pas de caries ou d'usures anormales</li>
+                                  <li>Comportement : Lent (normal pour l'espèce), mais réactif aux stimuli</li>
+                                  </ul>
+                                  </p>
+                                  <p class="card-text"><strong>État:</strong> <span id="animal-state">En bonne santé générale, léger ralentissement de la motricité observé</span></p>
+                                  <p class="card-text"><strong>Nourriture:</strong> <span id="animal-food">  Feuilles variées (cécropia, figuier), fruits (pomme, poire), légumes (carottes, patates douces).</span></p>
+                                  <p class="card-text"><strong>Quantité de nourriture:</strong> <span id="animal-food-quantity">300g par jour.</span></p>
+                                  <p class="card-text"><strong>Dernier contrôle:</strong> <span id="animal-last-check"> 15 juin 2024</span></p>
+                                  <p class="card-text"><strong>Détail de l'état de l'animal</strong> <span  id="animal-details">: Digestif en bon état, bon appétit. Hydratation adéquate. Recommandé de surveiller régulièrement pour éviter la déshydratation et les problèmes digestifs. Pas de signes de stress ou de maladies.
+                                  <br> Pas de blessures apparentes, griffes en bon état.</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
 </div>
 </div>
-</div>
-<div class="contenaire text-bg-secondary rounded mb-3 p-4">
+
+  <div class="container text-bg-secondary rounded mb-3 p-4">
     <div class="text-center">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal" data-show="admin">Ajouter un habitat</button>
 
-</div>
-</div>
-</div>
+    </div>
+  </div>
+
+
 
 <!-- Modal Edition-->
       <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
@@ -279,7 +998,6 @@
     </div>
   </div>
 </div>
-
 
 
   <script type="module" src="../Router/Router.js"></script>
