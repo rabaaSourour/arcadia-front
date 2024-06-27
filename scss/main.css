@@ -484,12 +484,12 @@ select:disabled {
   display: none !important;
 }
 
-button,
+/*button,
 [type=button],
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-}
+}*/
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -544,11 +544,11 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+/*[type=search] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
-
+*/
 /* rtl:raw:
 [type="tel"],
 [type="url"],
@@ -565,11 +565,11 @@ legend + * {
   padding: 0;
 }
 
-::file-selector-button {
+/*::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
 }
-
+*/
 output {
   display: inline-block;
 }
@@ -11985,7 +11985,7 @@ footer.footer {
 }
 
 p {
-  font-family: "Mind Madurai", serif;
+  font-family: "Time New Roman", serif;
   font-size: 18px;
 }
 
@@ -12019,39 +12019,30 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
-}
-
-/*
 .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid #588157;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #588157;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-*/
-#content {
-  display: none; /* Hide content initially */
-}
-
+/*#content {
+    display: none; /* Hide content initially 
+}*/
 .hidden {
   display: none;
 }/*# sourceMappingURL=main.css.map */

@@ -99,10 +99,10 @@ window.onload = function () {
     const loader = document.getElementById('loader');
     const content = document.getElementById('content');
 
-    showAndHideElementsForRoles().then(() => {
-        loader.style.display = 'none';
-        content.style.display = 'block';
-    });
+ //   showAndHideElementsForRoles().then(() => {
+   //     loader.style.display = 'none';
+     //   content.style.display = 'block';
+   // });
 };
 
 

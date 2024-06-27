@@ -38,7 +38,7 @@
     <div class="tab-content text-bg-secondary rounded" id="myTabContent">
 
       <!-- les habitats du ZOO-->
-      <div class="tab-pane fade show active" id="habitats" role="tabpanel" aria-labelledby="habitats-tab">
+      <div class="tab-pane fade show active mb-3" id="habitats" role="tabpanel" aria-labelledby="habitats-tab">
         <p class="text-center text-dark p-4">Chaque habitat du Zoo Écologique Arcadia est conçu pour refléter fidèlement
           les environnements naturels des espèces qu'il abrite,
           tout en sensibilisant le public aux enjeux environnementaux et aux actions nécessaires pour protéger notre
@@ -309,7 +309,7 @@
 
         <!-- les différent services du ZOO-->
       <div class="tab-pane fade" id="services" role="tabpanel" aria-labelledby="services-tab">
-        <div class="container text-bg-secondary rounded p-4">
+        <div class="container text-bg-secondary rounded p-4 mb-3">
           <p class="text-center text-dark pb-3">la découverte de la nature s'accompagne de confort et de commodités pour une
             expérience inoubliable,
             Notre parc propose plusieurs services pour enrichir votre visite et vous permettre de profiter pleinement de
@@ -391,158 +391,97 @@
   </div>
 </section>
 
+<article>
+  <div class="container text-center p-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <!-- localisation -->
+  <div class="col text-bg-secondary rounded p-3">
+    <p class="text-bg-primary text-center rounded p-3">Où sommes-nous !</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2668.7174835636697!2d-2.179163103210465!3d48.019167799999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edffaf7884ad9%3A0xf218bf672b3dfd0!2sLa%20for%C3%AAt%20de%20Broc%C3%A9liande!5e0!3m2!1sfr!2sfr!4v1718791084054!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <!-- les horaires d'overture -->
+  <div class=" col text-bg-secondary rounded p-3">
+    <p class="text-bg-primary text-center rounded p-3">Horaires d'ouverture </p>
+    <div class="container mt-5">
+      <div class="row">
+          <div class="col-md-12">
+              <table class="table table-bordered table-striped mt-4">
+                  <thead class="thead-dark">
+                      <tr>
+                          <th class="text-bg-primary">Jour</th>
+                          <th class="text-bg-primary">Horaires</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <?php include '../back/load_hours.php'; ?>
+                  </tbody>
+              </table>
+              <a href="../back/edit_hours.php" class="btn btn-primary mt-3" data-show="employé">Modifier les horaires</a>
+          </div>
+      </div>
+  </div>
+    
+  </div>
+</div>
+</div>
+
+</article>
+
 
 
 
 <article>
-
-  <!--commentaire-->
-
   <div class="container text-bg-secondary rounded mt-5">
     <h3 class="text-center pt-3 mb-3">Voici quelques avis sur le ZOO</h3>
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
-      </div>
 
-      <!-- premiere page de carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <?php foreach ($avis as $index => $avisItem) : ?>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo $index; ?>" class="<?php echo ($index === 0) ? 'active' : ''; ?>" aria-current="<?php echo ($index === 0) ? 'true' : 'false'; ?>" aria-label="Slide <?php echo $index + 1; ?>"></button>
+        <?php endforeach; ?>
+      </div>
 
       <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-
-            <!-- commentaire N°1-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°2-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°3-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
+        <?php foreach ($avis as $index => $avisItem) : ?>
+          <div class="carousel-item <?php echo ($index === 0) ? 'active' : ''; ?>">
+            <div class="row">
+              <div class="col-md-4 mb-5">
+                <div class="card text-bg-primary text-center">
+                  <img class="card-img-top" src="<?php echo htmlspecialchars($avisItem['chemin_image']); ?>" alt="Image de <?php echo htmlspecialchars($avisItem['nom_auteur']); ?>">
+                  <h4><?php echo htmlspecialchars($avisItem['nom_auteur']); ?></h4>
+                  <p class="card-text"><?php echo htmlspecialchars($avisItem['texte']); ?></p>
+                  <p>
+                    <?php
+                      $note = intval($avisItem['note']);
+                      for ($i = 1; $i <= 5; $i++) {
+                        if ($i <= $note) {
+                          echo '<i class="bi bi-star-fill text-warning"></i>';
+                        } else {
+                          echo '<i class="bi bi-star text-warning"></i>';
+                        }
+                      }
+                    ?>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-
-        <!-- Deuxiéme page du carrousel-->
-
-        <div class="carousel-item">
-          <div class="row">
-
-            <!-- commentaire N°1-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°2-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°3-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
-
-        <!-- troisiéme page de carrousel-->
-
-        <div class="carousel-item">
-          <div class="row">
-
-            <!-- commentaire N°1-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png" alt="">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°2-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <img class="card_img_top" src="/assets/Jungle.png">
-                <h4> Rone Galle</h4>
-                <p class="card-text"> fhvblsievblqbf</p>
-              </div>
-            </div>
-
-            <!-- commentaire N°3-->
-
-            <div class="col-md-4 mb-5">
-              <div class="card text-bg-primary text-center">
-                <a href="/Pages/reviews.html"><img class="card_img_top" src="/assets/ajouter.png"></a>
-                <p class="card-text"> ajoutrz-votre avis</p>
-              </div>
-            </div>
-
-            <!--fin des commentaires-->
-
-
-          </div>
-          <div class="carousel-caption d-none d-md-block">
-          </div>
-        </div>
+        <?php endforeach; ?>
       </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Précédent</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Suivant</span>
+      </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
-  <!-- fin de carrousel-->
 </article>
+
 
 <script type="module" src="../Router/Router.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

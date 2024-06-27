@@ -12,6 +12,7 @@ export const allRoutes = [
     new Route("/jungle", "Jungle", "/Pages/jungle.html"),
     new Route("/savane", "Savane", "/Pages/savane.html"),
     new Route("/marais", "Marais", "/Pages/marais.html"),
+    new Route("/creat_user", "Créer un utilisateur", "/Pages/creat_user.html",["admin"])
 ];
 
 // Le titre s'affiche comme ceci : Route.titre - websiteName
