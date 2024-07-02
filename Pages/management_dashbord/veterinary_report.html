@@ -1,0 +1,49 @@
+
+
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="../scss/main.css">
+
+
+
+    <div class="container">
+        <h1>Manage Reports</h1>
+        <form id="addReportForm">
+            <div class="form-group">
+                <label for="animalId">Animal ID</label>
+                <input type="number" id="animalId" required>
+            </div>
+            <div class="form-group">
+                <label for="veterinarianId">Veterinary ID</label>
+                <input type="number" id="veterinarianId" required>
+            </div>
+            <div class="form-group">
+                <label for="animal_description">Animal description</label>
+                <textarea id="animal_description" required></textarea>
+            </div><div class="form-group">
+                <label for="animal_state">Animal state</label>
+                <textarea id="animal_state" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="reportDate">last_check</label>
+                <input type="date" id="reportDate" required>
+            </div>
+            <div class="form-group">
+                <label for="food">food</label>
+                <textarea id="food" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="food_quantity">food quantity</label>
+                <textarea id="foodd_quantity" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="reportDetails">animal Details</label>
+                <textarea id="reportDetails" required></textarea>
+            </div>
+            <button type="submit">Add Report</button>
+        </form>
+    </div>
+    <script src="js/Veterinary_reports.js"></script>
+    <script type="module" src="../Router/Router.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

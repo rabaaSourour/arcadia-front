@@ -70,9 +70,48 @@ p{
     100% { transform: rotate(360deg); }
 }
 
-/*#content {
-    display: none; /* Hide content initially 
-}*/
+#content {
+    display: none; 
+}
 .hidden {
     display: none;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-container {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #A3B18A;
+}
+
+.animal-card {
+    cursor: pointer;
 }

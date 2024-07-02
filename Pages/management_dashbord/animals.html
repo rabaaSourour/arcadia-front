@@ -1,0 +1,37 @@
+
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/bootstrap-icons.svg">
+    <link rel="stylesheet" href="../scss/main.css">
+
+    <div class="container">
+        <h1>Manage Animals</h1>
+        <form id="addAnimalForm">
+            <div class="form-group">
+                <label for="animalName">Name</label>
+                <input type="text" id="animalName" required>
+            </div>
+            <div class="form-group">
+                <label for="animalDescription">Description</label>
+                <textarea id="animalDescription" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="animalImage">Image URL</label>
+                <input type="text" id="animalImage" required>
+            </div>
+            <button type="submit">Add Animal</button>
+        </form>
+
+        <form id="deleteAnimalForm">
+            <div class="form-group">
+                <label for="deleteAnimalId">Animal ID</label>
+                <input type="number" id="deleteAnimalId" required>
+            </div>
+            <button type="submit">Delete Animal</button>
+        </form>
+    </div>
+
+
+    <script src="js/animals.js"></script>
+    <script type="module" src="../Router/Router.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -12,12 +12,13 @@
 
 <div class="container text-bg-secondary rounded">
 
-    <!-- les anumaux de la jungle-->
+    <!-- les animaux de la jungle-->
 
 <div class="container rounded p-4 m-3">
     <h1 class="text-center">Dévouvrez les animaux de la jungle !</h1>
     <div class="card mb-3 text-bg-primary rounded">
     <div>
+      <button  type="button" onclick="loadDoc()">
       <img src="/assets/Jungle.png" class="card-img p-3 " alt="image de la Jungle">
       <div class="action-image-buttons" data-show="admin">
         <button type="button" class="btn btn-outline-light text-bg-dark text-secondary" data-bs-toggle="modal" data-bs-target="#EditionPhotoModal">
@@ -27,6 +28,7 @@
           <i class="bi bi-trash"></i>
         </button>
       </div>
+      </button>
     </div>
       <div class="card-body">
         <h5 class="card-title text-dark">Jungle</h5>
@@ -349,7 +351,7 @@
     </div>
       <div class="card-body">
         <h5 class="card-title text-dark">Savane</h5>
-        <p class="card-text text-clear">Tla savane est un lieu qui recrée l'écosystème de la savane de manière durable pour abriter et exposer une diversité d'animaux. <br>
+        <p class="card-text text-clear">la savane est un lieu qui recrée l'écosystème de la savane de manière durable pour abriter et exposer une diversité d'animaux. <br>
           Il met l'accent sur la conservation,
           l'éducation et la recherche, <br>tout en favorisant une observation respectueuse des animaux.</p>
         <p class="card-text"></p>
@@ -948,56 +950,62 @@
     </div>
   </div>
 
-
-
-<!-- Modal Edition-->
-      <div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                      <label for="NamePhotoInput" class="form-label">Titre</label>
-                      <input type="text" class="form-control" id="NamePhotoInput" name="Titre"> 
-                    </div>
-                    <div class="mb-3">
-                      <label for="ImageInput" class="form-label">Image</label>
-                      <input type="file" class="form-control" id="ImageInput"  name="Image">
-                    </div>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-primary">Enregistrer</button>
-                    </div>
-                </form>
-              </div>
-          </div>
-        </div>
+<!-- Modal Edition de Photo -->
+<div class="modal fade" id="EditionPhotoModal" tabindex="-1" aria-labelledby="EditionPhotoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-5" id="EditionPhotoModalLabel">Edition Photo</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body">
+        <form id="editPhotoForm" action="edit_photo.php" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="NamePhotoInput" class="form-label">Titre</label>
+            <input type="text" class="form-control" id="NamePhotoInput" name="Titre"> 
+          </div>
+          <div class="mb-3">
+            <label for="ImageInput" class="form-label">Image</label>
+            <input type="file" class="form-control" id="ImageInput" name="Image">
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
     
   
 
-<!-- Modal suppression-->
+<!-- Modal suppression de Photo -->
 <div class="modal fade" id="DeletePhotoModal" tabindex="-1" aria-labelledby="DeletePhotoModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h2 class="modal-title fs-5" id="DeletePhotoModal">Etes-vous sur de vouloir supprimer cette photo</h2>
+        <h2 class="modal-title fs-5" id="DeletePhotoModalLabel">Etes-vous sûr de vouloir supprimer cette photo ?</h2>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-          <form>
-              <div class="text-center">
-                  <button type="button" class="btn btn-danger">Supprimer</button>
-                  <button type="button" class="btn btn-secondry" data-bs-dismiss="modal">Annuler</button>
-              </div>
-          </form>
-        </div>
+        <form id="deletePhotoForm" action="delete.php" method="post">
+          <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+          <input type="hidden" id="image_id" name="image_id">
+          
+          <label for="image_id">ID de l'image à supprimer :</label><br>
+          <input type="text" id="image_id_input" name="image_id_input" readonly><br>
+          
+          <div class="text-center">
+            <button type="submit" class="btn btn-danger">Confirmer la suppression</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+          </div>
+        </form>
+      </div>
     </div>
   </div>
 </div>
+
 
 
   <script type="module" src="../Router/Router.js"></script>
