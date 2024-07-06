@@ -12003,6 +12003,7 @@ p {
 }
 
 .card {
+  background-color: #588157;
   margin: 0 20px;
   padding: 0 10px;
   border-radius: 20px;
@@ -12040,15 +12041,12 @@ p {
     transform: rotate(360deg);
   }
 }
-#content {
-  display: none;
-}
-
 .hidden {
   display: none;
 }
 
 .container {
+  background-color: #A3B18A;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
@@ -12085,5 +12083,24 @@ button:hover {
 }
 
 .animal-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
   cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.animal-details {
+  padding: 10px;
+}
+
+.card-title {
+  color: #1F451A;
+}
+
+.card-text {
+  color: #EBDDB1;
 }/*# sourceMappingURL=main.css.map */

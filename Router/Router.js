@@ -1,4 +1,4 @@
-import Route from "./Route.js";
+import Route from "./route.js";
 import { allRoutes, websiteName } from "./allRoutes.js";
 
 // Création d'une route pour la page 404 (page introuvable)
@@ -9,7 +9,7 @@ const getRouteByUrl = (url) => {
   let currentRoute = null;
   // Parcours de toutes les routes pour trouver la correspondance
   allRoutes.forEach((element) => {
-    if (element.url === url) {
+    if (element.path === url) {
       currentRoute = element;
     }
   });
@@ -24,7 +24,7 @@ const LoadContentPage = async () => {
   const actualRoute = getRouteByUrl(path);
 
   // Vérifier les droits d'accès à la page
-  const allRolesArray = actualRoute.authorize;
+  const allRolesArray = actualRoute.roles;
   if (allRolesArray.length > 0) {
     if (allRolesArray.includes("disconnected")) {
       if (isConnected()) {
@@ -41,7 +41,7 @@ const LoadContentPage = async () => {
   }
 
   // Récupération du contenu HTML de la route
-  const html = await fetch(actualRoute.pathHtml).then((data) => data.text());
+  const html = await fetch(actualRoute.htmlFile).then((data) => data.text());
   // Ajout du contenu HTML à l'élément avec l'ID "main-page"
   document.getElementById("main-page").innerHTML = html;
 
@@ -61,6 +61,7 @@ const LoadContentPage = async () => {
 
   // Afficher et masquer les éléments en fonction du rôle
   showAndHideElementsForRoles();
+};
 
 
 // Fonction pour gérer les événements de routage (clic sur les liens)
@@ -79,4 +80,3 @@ window.onpopstate = LoadContentPage;
 window.route = routeEvent;
 // Chargement du contenu de la page au chargement initial
 LoadContentPage();
-};
