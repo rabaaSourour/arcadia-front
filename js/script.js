@@ -105,4 +105,17 @@ window.onload = function () {
    // });
 };
 
+document.addEventListener("DOMContentLoaded", function() {
+    fetch('/api/animals')
+        .then(response => response.json())
+        .then(data => {
+            let animalList = document.getElementById('animal-list');
+            data.forEach(animal => {
+                let li = document.createElement('li');
+                li.textContent = `${animal.name} (${animal.species})`;
+                animalList.appendChild(li);
+            });
+        })
+        .catch(error => console.error('Error fetching animals:', error));
+});
 
